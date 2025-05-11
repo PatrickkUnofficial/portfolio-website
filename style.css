@@ -1,14 +1,16 @@
 header {
-  background-color: #944680;
-  color: rgb(230, 144, 144);
+  background-color: #200313;
+  color: rgb(252, 249, 249);
   padding: 20px;
   margin: 0%;
   text-align: center;
+  border-radius: 20px;
 }
 nav {
   background-color: #444;
   padding: 10px;
   text-align: center;
+  border-radius: 20px;
 }
 
 nav ul {
@@ -54,7 +56,7 @@ nav ul li a:hover {
 }
 
 .profile-container{
-    background-color: #976168;
+    background-color:#976168;
     display: flex;
     align-items: center; 
     justify-content: space-between; 
@@ -70,7 +72,7 @@ section{
     font-size: 25px;
 }
 body{
-    background-color:#bd8ab0;
+    background-color:#664960;
 }
 .about{
     background-color: #976168;
@@ -136,4 +138,9 @@ h2{
     text-align:left;
     max-width: 1000px;
     padding-left: 100px;
+}
+.project-images{
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
