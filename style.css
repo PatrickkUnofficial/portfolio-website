@@ -6,6 +6,7 @@ header {
   text-align: center;
   border-radius: 20px;
 }
+
 nav {
   background-color: #444;
   padding: 10px;
@@ -19,7 +20,7 @@ nav ul {
 }
 
 nav ul li {
-  display:contents;
+  display: contents;
   margin-right: 20px;
 }
 
@@ -41,6 +42,7 @@ nav ul li a:hover {
   max-width: 1200px;
   margin-left: 100px;
   margin-right: 100px;
+  background-color: #976168;
 }
 
 .intro {
@@ -56,72 +58,52 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-.profile-container{
-    background-color:#976168;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    gap: 1px;
+h2 {
+  font-size: 40px;
+  padding-left: 100px;
+  text-align: left;
 }
-h2{
-    font-size: 40px;
-    padding-left: 100px;
+
+section {
+  padding: 40px;
+  max-width: 1200px;
+  font-size: 25px;
 }
-section{
-    padding: 40px;
-    max-width: 1200px;
-    font-size: 25px;
+
+body {
+  background-color: #8f6787;
 }
-body{
-    background-color:#8f6787;
-}
-.about{
-    background-color: #976168;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    gap: 1px;
-    width: 80vw;
-    padding: 10px;
-    margin: 100px;
-    margin-top: 10px;
-}
-.patrick-creations{
-   width: 400px; 
-  height: auto;
-  margin-top: 10px;
-  margin-right: 20px;   
-}
-.poster{
-    width: 300px; 
-  height: auto;
-  margin-top: 10px;
-  margin-right: 20px;   
-}
-.project-card{
-    display: flex;
+
+.about {
+  background-color: #976168;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  max-width: 1200px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 20px;
-  background-color:antiquewhite;
+  gap: 1px;
+  width: 80vw;
+  padding: 10px;
+  margin: 100px;
+  margin-top: 10px;
 }
-.project-card1{
-    display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  max-width: 1200px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 20px;
-  background-color:antiquewhite;
+
+.patrick-creations {
+  width: 400px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 20px;
 }
-.project-card2{
-    display: flex;
+
+.poster {
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.project-card,
+.project-card1,
+.project-card2 {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -131,24 +113,71 @@ body{
   margin-bottom: 20px;
   background-color: antiquewhite;
 }
-h2{
-    text-align: left;
-    padding-left: 100px;
+
+.contact {
+  text-align: left;
+  max-width: 1000px;
+  padding-left: 100px;
 }
-.contact{
-    text-align:left;
-    max-width: 1000px;
-    padding-left: 100px;
-}
-.contact-section{
+
+.contact-section {
   padding-top: 0%;
   margin-top: 0px;
 }
-p{
+
+p {
   font-size: 20px;
 }
-ul{
+
+ul {
   padding-left: 10px;
   margin-left: 200px;
   font-size: 20px;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+  .profile-container,
+  .about,
+  .project-card,
+  .project-card1,
+  .project-card2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .profile-image,
+  .patrick-creations,
+  .poster {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  section,
+  .contact {
+    padding: 20px;
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  ul {
+    margin-left: 0;
+    padding-left: 20px;
+    text-align: left;
+  }
 }
